@@ -89,8 +89,17 @@ MCP SSE (:6070) — authenticates token
               │
               ├──► Squad marks done
               ├──► Redis delivers result to customer stream
+              ├──► Delivery notification sent to customer
               └──► Customer checks inbox() → sees delivery
 ```
+
+## Customer Onboarding API
+
+`POST /api/v1/customers/signup` — one-call onboarding. Creates tokens, squad, genesis task, customer directory, bus notification.
+
+## Agent Count
+
+17 agents on the bus (see [agents.md](agents.md) for roster).
 
 ## Authentication
 

@@ -15,7 +15,14 @@
 | `cortex-events` | — | always | Event-driven brain wakeup |
 | `discord-collab-listener` | — | on-failure | Discord → bus |
 | `redis-discord-bridge` | — | on-failure | Bus → Discord alerts |
+| `mirror` | 8844 | always | Memory API (Supabase pgvector) |
+| `kasra-agent` | — | always | Kasra Claude Code agent |
+| `kasra-agent-watchdog` | — | always | Kasra agent watchdog |
+| `spai-agent` | — | always | SPAI Claude Code agent (autonomous) |
+| `spai-agent-watchdog` | — | always | SPAI agent watchdog |
 | `factory-watchdog` | — | always | Token flow monitor |
+
+**17 services total.**
 
 ## Ports
 

@@ -41,8 +41,39 @@ Works with: Claude Code, Antigravity IDE, Claude.ai, any MCP client.
 | `task_create(...)` | Create task | Squad |
 | `task_list(...)` | List tasks | Squad |
 | `task_update(...)` | Update task | Squad |
-| `request(description)` | Customer intake | All |
+| `request(description)` | Customer intake — creates task, stores engram, wakes agents | All |
 | `onboard(...)` | Agent briefing or customer onboard | All |
+
+**14 tools total** across 3 layers.
+
+## Customer Onboarding API
+
+`POST /api/v1/customers/signup`
+
+Creates a fully provisioned customer in one call:
+- Generates bus_token, mirror_token, squad_token
+- Creates default squad
+- Dispatches genesis task
+- Creates customer directory
+- Sends bus notification
+
+```bash
+curl -X POST https://mcp.mumega.com/api/v1/customers/signup \
+  -H "X-Signup-Secret: $SECRET" \
+  -H "Content-Type: application/json" \
+  -d '{"slug": "acme", "label": "Acme Corp", "email": "ceo@acme.com"}'
+```
+
+Response includes: `bus_token`, `mirror_token`, `squad_token`, `mcp_sse_url`, `mcp_http_url`.
+
+### The `request` Tool
+
+Customers use `request(description)` to submit work. It:
+1. Creates a task in Squad Service (backlog, high priority)
+2. Stores an engram in Mirror (semantic memory)
+3. Publishes a wake event on Redis
+4. Sovereign loop picks up and routes to the right agent
+5. On completion, delivery notification sent to customer
 
 ## Authentication
 

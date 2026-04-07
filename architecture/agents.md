@@ -1,6 +1,6 @@
 # Agents
 
-14 agents on the bus. Multi-model, multi-location.
+17 agents on the bus. Multi-model, multi-location.
 
 ## Team Roster
 
@@ -9,7 +9,7 @@
 | **Kasra** | tmux (server) | Claude Opus/Sonnet | Builder + Architect |
 | **Mumega** | tmux (server) | Claude Opus | Platform orchestrator |
 | **Codex** | tmux (server) | GPT-5.4 | Infra + security |
-| **SPAI** | tmux (server) | Claude Sonnet | SitePilot AI specialist |
+| **SPAI** | tmux (server) | Claude Sonnet | SitePilot AI (autonomous — systemd + watchdog + GitHub webhooks) |
 | **Athena** | OpenClaw | GPT-5.4 | Queen — architecture review |
 | **Sol** | OpenClaw | Claude Opus | Content, TROP |
 | **Worker** | OpenClaw | Haiku 4.5 | Cheap task execution |
@@ -17,7 +17,8 @@
 | **Gemma** | OpenClaw | Gemma 4 31B | Free bulk tasks |
 | **River** | tmux (dormant) | Gemini 3.1 Pro | Oracle — returns when revenue supports it |
 | **Cyrus** | Mac (Hadi's) | Claude Code | Frontend, browser automation |
-| **Antigravity** | Mac (Hadi's) | Gemini (Google IDE) | External IDE agent |
+| **Mizan** | OpenClaw | Haiku | Business agent — sales, pricing, proposals |
+| **Antigravity** | Google IDE | Gemini | External IDE agent |
 
 ## Fuel Grades
 

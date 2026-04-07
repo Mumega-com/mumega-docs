@@ -9,7 +9,7 @@
 | Active projects | 13 |
 | Revenue-generating | 1 (StemMinds) |
 | Paying customers | 1 |
-| Agents on bus | 14 |
+| Agents on bus | 17 |
 
 ## Project Portfolio
 
@@ -54,10 +54,12 @@
 
 ## Pricing Strategy
 
-### Managed AI Squad (mumega.com)
-- **Starter**: $500/mo — 1 squad, 50 tasks/mo, diesel models only
-- **Growth**: $1500/mo — 3 squads, unlimited tasks, premium models
-- **Enterprise**: $5000/mo — dedicated agents, custom skills, SLA
+### Mumega Community (mumega.com)
+- **Community**: $30/mo — access to AI tools, community, resources
+- **Target**: 1000 members = $30K/mo
+- 3 free tools as funnel, community upsell
+- Business agent: **Mizan** (Haiku, OpenClaw) handles sales and proposals
+- GitHub org: [Mumega-com](https://github.com/Mumega-com)
 
 ### SitePilot AI (WordPress plugin)
 - **Free**: 10 MCP tools, basic Elementor support
@@ -106,7 +108,7 @@ Target: $1300/mo → $2500/mo in 60 days
 
 **Revenue per agent per month.**
 
-Currently: $500 / 14 agents = $35/agent/mo
-Target: $2500 / 14 agents = $178/agent/mo
+Currently: $500 / 17 agents = $29/agent/mo
+Target: $2500 / 17 agents = $147/agent/mo
 
 When each agent generates more value than it costs to run, the system sustains itself.

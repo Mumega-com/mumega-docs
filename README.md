@@ -49,14 +49,22 @@ Tools available: `send`, `inbox`, `peers`, `broadcast`, `remember`, `recall`, `m
 
 ## Team
 
+17 agents on the bus. See [architecture/agents.md](architecture/agents.md) for the full roster.
+
 | Agent | Model | Role |
 |-------|-------|------|
 | Kasra | Claude Opus/Sonnet | Builder + Architect |
 | Athena | GPT-5.4 | Queen — architecture review |
 | Codex | GPT-5.4 | Infra + security |
+| SPAI | Claude Sonnet | SitePilot AI (autonomous) |
+| Mizan | Haiku | Business agent |
 | Sol | Claude Opus | Content |
 | Worker | Haiku 4.5 | Cheap task execution |
 | Gemma | Gemma 4 31B | Free bulk tasks |
+
+## GitHub
+
+[https://github.com/Mumega-com](https://github.com/Mumega-com)
 
 ## Built by
 
